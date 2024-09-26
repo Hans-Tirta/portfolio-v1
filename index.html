@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <div class="container" id="color-container">
+        <div class="area">
+            <ul class="rectangles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <a href="" class="logo">Hans</a>
+                <div class="dot">.</div>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="nav-hamburger">
+            <div class="logo-container">
+                <a href="" class="logo">Hans</a>
+                <div class="dot">.</div>
+            </div>
+            <div class="menu-hamburger">
+                <div class="icon-hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#works" onclick="toggleMenu()">Work</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="hero">
+            <div class="section__pic-container">
+                <img src="./assets/hero-pic.png" alt="My Picture">
+            </div>
+            <div class="section__text">
+                <p>Hi, I'm</p>
+                <h1 class="title type">Hans Dominic Tirta</h1>
+                <p class="section__text__p1">Student at BINUS University</p>
+                <div class="socials-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+                        onclick="location.href='https://linkedin.com/in/hans-dominic-a81126276/'">
+                    <img src="./assets/github.png" alt="GitHub" class="icon"
+                        onclick="location.href='https://github.com/Hans-Tirta'">
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="about">
+        <p class="section__text__p2">Learn More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" alt="My Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="" class="icon">
+                        <h3>Education</h3>
+                        <br>
+                        <div class="education-item">
+                            <p class="school">Citra Kasih Senior High School</p>
+                            <p class="year">2019 - 2022</p>
+                        </div>
+                        <div class="education-item">
+                            <p class="school">Bina Nusantara University</p>
+                            <p class="year">2022 - Present</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="" class="icon">
+                        <h3>Experience</h3>
+                        <br>
+                        <div class="education-item">
+                            <p class="school">Activist HIMTI CARE Division</p>
+                            <p class="year">2023 - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hi, my name is Hans Dominic Tirta, and I'm a 20-year-old Computer Science undergraduate with
+                        a
+                        strong passion for software development. I am particularly interested in building efficient,
+                        user-centered solutions and am always eager to enhance my problem-solving skills. My
+                        academic
+                        journey, paired with hands-on experience in various projects, has fueled my drive to explore
+                        emerging technologies, improve my technical abilities, and make meaningful contributions to
+                        the
+                        field.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works">
+        <p class="section__text__p2">Explore My Latest</p>
+        <h1 class="title">Works</h1>
+        <div class="work-containers">
+            <div class="work-container">
+                <h2 class="project-title">RumahTangga</h2>
+                <div class="article-container">
+                    <img src="./assets/project-4.png" alt="Project 4" class="project-img">
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                        Demo
+                    </button>
+                </div>
+            </div>
+            <div class="work-container">
+                <h2 class="project-title">RAiso</h2>
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project three" class="project-img">
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                        Demo
+                    </button>
+                </div>
+            </div>
+            <div class="work-container">
+                <h2 class="project-title">LiftLife</h2>
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                        Demo
+                    </button>
+                </div>
+            </div>
+            <div class="work-container">
+                <h2 class="project-title">JCC Clone App</h2>
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                        Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p2">Feel Free To</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container" onclick="location.href='mailto:hansdominict@gmail.com'">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:hansdominict@gmail.com">hansdominict@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container"
+                onclick="location.href='https://linkedin.com/in/hans-dominic-a81126276/'">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <p>Powered By</p>
+            <div class="words">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                <span>HTML</span>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
