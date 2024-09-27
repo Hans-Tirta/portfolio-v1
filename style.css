@@ -21,15 +21,16 @@ p {
 /* Transition */
 .container {
     transition: background-color 0.5s ease;
+    height: 100%;
 }
 
 .area {
     position: absolute;
-    top: 160px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 82.5%;
-    z-index: 0;
+    height: 100%;
+    z-index: -1
 }
 
 .rectangles {
@@ -48,7 +49,7 @@ p {
     width: 20px;
     height: 20px;
     background: grey;
-    animation: animate 25s linear infinite;
+    animation: animate 20s linear infinite;
     bottom: -150px;
 }
 
@@ -226,21 +227,6 @@ section {
     margin: 0 10rem;
     block-size: border-box;
     min-height: fit-content;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-
-    to {
-        opacity: 1;
-        scale: 1;
-    }
 }
 
 /* Hero Section */
@@ -248,7 +234,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: calc(100vh - 160px);
 }
 
 .section__pic-container {
@@ -272,10 +258,13 @@ section {
     margin-bottom: 1rem;
 }
 
-/* Typewriter Animation */
+/* Typewriter & Appear Animation */
 .title {
     text-align: center;
     font-size: 3rem;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .type {
@@ -299,6 +288,18 @@ section {
 @keyframes cursor {
     50% {
         border-color: transparent;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
     }
 }
 
@@ -334,6 +335,9 @@ section {
     font-size: 1.75rem;
     margin-bottom: 1rem;
     text-align: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .section-container {
@@ -490,7 +494,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 80vh;
+    height: calc(100vh - 160px);
 }
 
 .contact-info-upper-container {
@@ -536,8 +540,7 @@ section {
 
 /* Footer Section */
 footer {
-    padding-top: 2rem;
-    height: 8vh;
+    height: 160px;
     margin: 0 1rem;
     display: flex;
     justify-content: center;
@@ -560,7 +563,7 @@ footer p {
     overflow: hidden;
 }
 
-span {
+.spin {
     font-size: 1.25rem;
     font-weight: 600;
     text-align: left;
