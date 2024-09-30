@@ -24,8 +24,8 @@
 
     .section__pic-container,
     .about-pic {
-        width: 275px;
-        height: 275px;
+        width: 280px;
+        height: 280px;
         margin: 0 auto 2rem;
     }
 
@@ -99,7 +99,8 @@
     }
 
     .details-container,
-    .work-container {
+    .work-container,
+    .card {
         flex: 1 1 100%;
         max-width: 100%;
     }
