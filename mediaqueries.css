@@ -8,24 +8,22 @@
     }
 
     #hero,
-    .section-container {
+    .timeline-row {
         display: block;
     }
 
-    section,
-    .section-container {
+    section {
         height: fit-content;
     }
 
     section {
-        margin: 0 5%;
+        margin: 0 10%;
         height: 100vh;
     }
 
-    .section__pic-container,
-    .about-pic {
-        width: 280px;
-        height: 280px;
+    .section__pic-container {
+        width: 360px;
+        height: 360px;
         margin: 0 auto 2rem;
     }
 
@@ -34,40 +32,17 @@
         text-align: center;
     }
 
-    .socials-container {
-        justify-content: center;
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
-    .about-containers {
-        margin-top: 0;
+    .socials-container {
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #contact {
-        height: 40vh;
-    }
-
-    #hero {
-        height: 83vh;
-        margin-bottom: 0;
-    }
-
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-        flex-wrap: wrap;
-    }
-
-    .contact-info-container {
-        margin: 0;
-    }
-
-    .contact-info-container p,
-    .nav-links li a {
-        font-size: 1rem;
-    }
-
     .logo {
         font-size: 1.5rem;
     }
@@ -84,24 +59,19 @@
         justify-content: center;
     }
 
-    .about-pic {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
+    .title {
+        font-size: 2rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
     }
 
     .section__text__p2 {
         font-size: 1.25rem;
     }
 
-    .title {
-        font-size: 2rem;
-    }
-
-    .details-container,
-    .work-container,
-    .card {
-        flex: 1 1 100%;
-        max-width: 100%;
+    .contact-info-upper-container {
+        flex-wrap: wrap;
     }
 }

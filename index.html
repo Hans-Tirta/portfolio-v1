@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
 <body>
@@ -71,32 +72,51 @@
     <section id="about">
         <p class="section__text__p2">Learn More</p>
         <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.jpg" alt="My Picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="" class="icon">
-                        <h3>Education</h3>
-                        <br>
-                        <div class="education-item">
-                            <p class="school">Citra Kasih Senior High School</p>
-                            <p class="year">2019 - 2022</p>
+        <div class="timeline-wrapper">
+            <div class="timeline-row">
+                <div class="timeline-col">
+                    <h2 class="heading">
+                        <box-icon type='solid' name='graduation'></box-icon>
+                        Education
+                    </h2>
+                    <div class="timeline-box">
+                        <div class="content-box">
+                            <div class="circle"></div>
+                            <div class="date">
+                                <box-icon name='calendar'></box-icon>
+                                2019-2022
+                            </div>
+                            <h3>Citra Kasih Senior High School</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tenetur recusandae quos
+                                nisi eligendi tempora fugiat rerum molestiae totam quisquam.</p>
                         </div>
-                        <div class="education-item">
-                            <p class="school">Bina Nusantara University</p>
-                            <p class="year">2022 - Present</p>
+                        <div class="content-box">
+                            <div class="circle"></div>
+                            <div class="date">
+                                <box-icon name='calendar'></box-icon>
+                                2022-Present
+                            </div>
+                            <h3>Bina Nusantara University</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tenetur recusandae quos
+                                nisi eligendi tempora fugiat rerum molestiae totam quisquam.</p>
                         </div>
                     </div>
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="" class="icon">
-                        <h3>Experience</h3>
-                        <br>
-                        <div class="education-item">
-                            <p class="school">Activist HIMTI CARE Division</p>
-                            <p class="year">2023 - 2024</p>
+                </div>
+                <div class="timeline-col">
+                    <h2 class="heading">
+                        <box-icon name='briefcase' type='solid'></box-icon>
+                        Experience
+                    </h2>
+                    <div class="timeline-box">
+                        <div class="content-box">
+                            <div class="circle"></div>
+                            <div class="date">
+                                <box-icon name='calendar'></box-icon>
+                                2023-2024
+                            </div>
+                            <h3>Activist HIMTI CARE Division</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tenetur recusandae quos
+                                nisi eligendi tempora fugiat rerum molestiae totam quisquam.</p>
                         </div>
                     </div>
                 </div>
@@ -127,7 +147,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-description">
-                        <span>ASP.NET</span>    
+                        <span>ASP.NET</span>
                         <span>SQL</span>
                         <span>C#</span>
                         <span>HTML</span>
@@ -142,7 +162,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-description">
-                        <span>Figma</span>    
+                        <span>Figma</span>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
@@ -156,7 +176,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-description">
-                        <span>Figma</span>    
+                        <span>Figma</span>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
@@ -171,12 +191,12 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container" onclick="location.href='mailto:hansdominict@gmail.com'">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <box-icon name='envelope' type='solid'></box-icon>
                 <p><a href="mailto:hansdominict@gmail.com">Email</a></p>
             </div>
             <div class="contact-info-container"
                 onclick="location.href='https://linkedin.com/in/hans-dominic-a81126276/'">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <box-icon name='linkedin' type='logo'></box-icon>
                 <p><a href="https://www.linkedin.com">LinkedIn</a></p>
             </div>
         </div>
