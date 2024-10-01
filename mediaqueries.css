@@ -32,6 +32,14 @@
         text-align: center;
     }
 
+    .timeline-col {
+        width: 100%;
+    }
+
+    .heading {
+        justify-content: left;
+    }
+
     .card {
         flex: 1 1 100%;
         max-width: 100%;
@@ -65,6 +73,18 @@
 
     .heading {
         font-size: 1.5rem;
+    }
+
+    .card-wrapper {
+        margin: 0 0rem 3rem;
+        padding: 0 0rem 1rem;
+        overflow: hidden;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+        ;
     }
 
     .section__text__p2 {

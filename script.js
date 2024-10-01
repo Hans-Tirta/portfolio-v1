@@ -31,3 +31,36 @@ document.getElementById('color-container').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % colors.length;
     document.getElementById('color-container').style.backgroundColor = colors[currentIndex];
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.card-wrapper', {
+        loop: true,
+        spaceBetween: 40,
+
+        // Pagination bullets
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+        },
+    });
+});
+

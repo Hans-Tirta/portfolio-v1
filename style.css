@@ -226,6 +226,7 @@ section {
     margin: 0 10rem;
     block-size: border-box;
     min-height: fit-content;
+
 }
 
 /* Hero Section */
@@ -345,7 +346,10 @@ section {
 
 .timeline-row {
     display: flex;
+}
 
+.timeline-col {
+    width: 50%;
 }
 
 .heading {
@@ -354,10 +358,7 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.heading i {
-    font-size: 4rem;
+    justify-content: center;
 }
 
 .content-box {
@@ -427,12 +428,16 @@ box-icon[name="calendar"] {
 
 .card-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+
+.card-wrapper {
+    margin: 0 3rem 3rem;
+    padding: 0 1rem 1rem;
+    overflow: hidden;
 }
 
 .card {
@@ -442,14 +447,12 @@ box-icon[name="calendar"] {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    flex: 1 1 calc(50% - 2rem);
-    display: flex;
-    flex-direction: column;
-    max-width: 30vw;
+    display: block;
+    width: 100%;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -504,6 +507,15 @@ box-icon[name="calendar"] {
     color: white;
     transform: translateY(-4px);
     transition: all 0.3s ease;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black !important;
+}
+
+.swiper .swiper-pagination-bullet {
+    background-color: black !important;
 }
 
 /* Contact Section */

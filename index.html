@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
@@ -87,8 +88,8 @@
                                 2019-2022
                             </div>
                             <h3>Citra Kasih Senior High School</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tenetur recusandae quos
-                                nisi eligendi tempora fugiat rerum molestiae totam quisquam.</p>
+                            <p>Completed my studies at Citra Kasih Senior High School located in DKI Jakarta, Jakarta
+                                Barat. </p>
                         </div>
                         <div class="content-box">
                             <div class="circle"></div>
@@ -97,8 +98,8 @@
                                 2022-Present
                             </div>
                             <h3>Bina Nusantara University</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tenetur recusandae quos
-                                nisi eligendi tempora fugiat rerum molestiae totam quisquam.</p>
+                            <p>Continuing my education at Binus University Alam Sutra, where I am currently pursuing a
+                                degree in Computer Science.</p>
                         </div>
                     </div>
                 </div>
@@ -115,8 +116,19 @@
                                 2023-2024
                             </div>
                             <h3>Activist HIMTI CARE Division</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut tenetur recusandae quos
-                                nisi eligendi tempora fugiat rerum molestiae totam quisquam.</p>
+                            <p>As an activist in the HIMTI CARE Division, I was involved in organizing various internal
+                                event for fellow activists, and social service initiatives.</p>
+                        </div>
+                        <div class="content-box">
+                            <div class="circle"></div>
+                            <div class="date">
+                                <box-icon name='calendar'></box-icon>
+                                2023-2024
+                            </div>
+                            <h3>Panitia TECHNO PBP Perkap Division</h3>
+                            <p>Coordinated room borrowing, arranged necessary equipment, and managed the borrowing for
+                                Zoom meetings. During the PBP held in July and August, I acted as an emcee a couple of
+                                times while managing documentation during the PBP event.</p>
                         </div>
                     </div>
                 </div>
@@ -126,63 +138,70 @@
     <section id="works">
         <p class="section__text__p2">Explore My Latest</p>
         <h1 class="title">Works</h1>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-image">
-                    <img src="./assets/project-4.png" alt="Placeholder Image">
-                </div>
-                <div class="card-content">
-                    <div class="card-description">
-                        <span>MongoDB</span>
-                        <span>Express</span>
-                        <span>React</span>
-                        <span>Node.js</span>
+        <div class="card-container swiper">
+            <div class="card-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="./assets/project-4.png" alt="Placeholder Image">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                            <h2>RumahTangga</h2>
+                        </div>
                     </div>
-                    <h2>RumahTangga</h2>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="./assets/project-3.png" alt="Placeholder Image">
-                </div>
-                <div class="card-content">
-                    <div class="card-description">
-                        <span>ASP.NET</span>
-                        <span>SQL</span>
-                        <span>C#</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="./assets/project-3.png" alt="Placeholder Image">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <span>ASP.NET</span>
+                                <span>SQL</span>
+                                <span>C#</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <h2>RAiso</h2>
+                        </div>
                     </div>
-                    <h2>RAiso</h2>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="./assets/project-2.png" alt="Placeholder Image">
-                </div>
-                <div class="card-content">
-                    <div class="card-description">
-                        <span>Figma</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="./assets/project-2.png" alt="Placeholder Image">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <span>Figma</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <h2>LIFT LIFE</h2>
+                        </div>
                     </div>
-                    <h2>LIFT LIFE</h2>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="./assets/project-1.png" alt="Placeholder Image">
-                </div>
-                <div class="card-content">
-                    <div class="card-description">
-                        <span>Figma</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                            <img src="./assets/project-1.png" alt="Placeholder Image">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <span>Figma</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <h2>JCC</h2>
+                        </div>
                     </div>
-                    <h2>JCC</h2>
                 </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -214,6 +233,7 @@
     </footer>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
