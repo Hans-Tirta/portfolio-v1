@@ -1,14 +1,14 @@
 function toggleMenu() {
-    const hamburger = document.querySelector('.icon-hamburger');
-    const menu = document.querySelector('.menu-links');
+    const hamburger = document.querySelector('.navbar__icon-hamburger');
+    const menu = document.querySelector('.navbar__menu-links');
 
     hamburger.classList.toggle('active');
     menu.classList.toggle('active');
 }
 
 document.addEventListener('click', (event) => {
-    const menu = document.querySelector('.menu-links');
-    const hamburger = document.querySelector('.icon-hamburger');
+    const menu = document.querySelector('.navbar__menu-links');
+    const hamburger = document.querySelector('.navbar__icon-hamburger');
     
     if (!hamburger.contains(event.target) && !menu.contains(event.target)) {
         menu.classList.remove('active');
@@ -33,9 +33,11 @@ document.getElementById('color-container').addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    new Swiper('.card-wrapper', {
+    new Swiper('.works__carousel-wrapper', {
         loop: true,
         spaceBetween: 40,
+        noSwiping: true, 
+        noSwipingClass: 'swiper-no-swiping',
 
         // Pagination bullets
         pagination: {

@@ -13,221 +13,223 @@
 
 <body>
     <div class="container" id="color-container">
-        <div class="area">
-            <ul class="rectangles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        <div class="container__area">
+            <ul class="container__rectangles">
+                <li class="container__rectangle"></li>
+                <li class="container__rectangle"></li>
+                <li class="container__rectangle"></li>
+                <li class="container__rectangle"></li>
+                <li class="container__rectangle"></li>
             </ul>
         </div>
         <nav id="nav-bar">
-            <div class="logo-container">
-                <a href="" class="logo">Hans</a>
-                <div class="dot">.</div>
+            <div class="navbar__logo-container">
+                <a href="" class="navbar__logo">Hans</a>
+                <div class="navbar__dot">.</div>
             </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <ul class="navbar__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
         <nav id="nav-hamburger">
-            <div class="logo-container">
-                <a href="" class="logo">Hans</a>
-                <div class="dot">.</div>
+            <div class="navbar__logo-container">
+                <a href="" class="navbar__logo">Hans</a>
+                <div class="navbar__dot">.</div>
             </div>
-            <div class="menu-hamburger">
-                <div class="icon-hamburger" onclick="toggleMenu()">
+            <div class="navbar__menu-hamburger">
+                <div class="navbar__icon-hamburger" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <div class="menu-links">
+                <ul class="navbar__menu-links">
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
                     <li><a href="#works" onclick="toggleMenu()">Work</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
+                </ul>
             </div>
         </nav>
-        <section id="hero">
-            <div class="section__pic-container">
-                <img src="./assets/hero-pic.png" alt="My Picture">
+        <section class="hero" id="hero">
+            <div class="hero__pic-container">
+                <img src="./assets/hero-pic.png" alt="My Picture" class="hero__image">
             </div>
-            <div class="section__text">
+            <div class="hero__text">
                 <p>Hi, I'm</p>
-                <h1 class="title type">Hans Dominic Tirta</h1>
-                <p class="section__text__p1">Student at BINUS University</p>
-                <div class="socials-container">
-                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+                <h1 class="section__text-title type">Hans Dominic Tirta</h1>
+                <p class="section__text-p1">Student at BINUS University</p>
+                <div class="hero__socials">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="hero__icon"
                         onclick="location.href='https://linkedin.com/in/hans-dominic-a81126276/'">
-                    <img src="./assets/github.png" alt="GitHub" class="icon"
+                    <img src="./assets/github.png" alt="GitHub" class="hero__icon"
                         onclick="location.href='https://github.com/Hans-Tirta'">
                 </div>
             </div>
         </section>
     </div>
-    <section id="about">
-        <p class="section__text__p2">Learn More</p>
-        <h1 class="title">About Me</h1>
-        <div class="timeline-wrapper">
-            <div class="timeline-row">
-                <div class="timeline-col">
-                    <h2 class="heading">
+    <section class="about" id="about">
+        <p class="section__text-p2">Learn More</p>
+        <h1 class="section__text-title">About Me</h1>
+        <div class="about__timeline">
+            <div class="about__timeline-row">
+                <div class="about__timeline-col">
+                    <h2 class="about__timeline-heading">
                         <box-icon type='solid' name='graduation'></box-icon>
                         Education
                     </h2>
-                    <div class="timeline-box">
-                        <div class="content-box">
-                            <div class="circle"></div>
-                            <div class="date">
+                    <div class="about__timeline-box">
+                        <div class="about__timeline-content">
+                            <div class="about__timeline-circle"></div>
+                            <div class="about__timeline-date">
                                 <box-icon name='calendar'></box-icon>
                                 2019-2022
                             </div>
-                            <h3>Citra Kasih Senior High School</h3>
-                            <p>Completed my studies at Citra Kasih Senior High School located in DKI Jakarta, Jakarta
-                                Barat. </p>
+                            <h3 class="about__timeline-title">Citra Kasih Senior High School</h3>
+                            <p class="about__timeline-description">Completed my studies at Citra Kasih Senior High
+                                School located in DKI Jakarta, Jakarta Barat.</p>
                         </div>
-                        <div class="content-box">
-                            <div class="circle"></div>
-                            <div class="date">
+                        <div class="about__timeline-content">
+                            <div class="about__timeline-circle"></div>
+                            <div class="about__timeline-date">
                                 <box-icon name='calendar'></box-icon>
                                 2022-Present
                             </div>
-                            <h3>Bina Nusantara University</h3>
-                            <p>Continuing my education at Binus University Alam Sutra, where I am currently pursuing a
-                                degree in Computer Science.</p>
+                            <h3 class="about__timeline-title">Bina Nusantara University</h3>
+                            <p class="about__timeline-description">Continuing my education at Binus University Alam
+                                Sutra, where I am currently pursuing a degree in Computer Science.</p>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-col">
-                    <h2 class="heading">
+                <div class="about__timeline-col">
+                    <h2 class="about__timeline-heading">
                         <box-icon name='briefcase' type='solid'></box-icon>
                         Experience
                     </h2>
-                    <div class="timeline-box">
-                        <div class="content-box">
-                            <div class="circle"></div>
-                            <div class="date">
+                    <div class="about__timeline-box">
+                        <div class="about__timeline-content">
+                            <div class="about__timeline-circle"></div>
+                            <div class="about__timeline-date">
                                 <box-icon name='calendar'></box-icon>
                                 2023-2024
                             </div>
-                            <h3>Activist HIMTI CARE Division</h3>
-                            <p>As an activist in the HIMTI CARE Division, I was involved in organizing various internal
-                                event for fellow activists, and social service initiatives.</p>
+                            <h3 class="about__timeline-title">Activist HIMTI CARE Division</h3>
+                            <p class="about__timeline-description">As an activist in the HIMTI CARE Division, I was
+                                involved in organizing various internal events for fellow activists and social service
+                                initiatives.</p>
                         </div>
-                        <div class="content-box">
-                            <div class="circle"></div>
-                            <div class="date">
+                        <div class="about__timeline-content">
+                            <div class="about__timeline-circle"></div>
+                            <div class="about__timeline-date">
                                 <box-icon name='calendar'></box-icon>
-                                2023-2024
+                                2023
                             </div>
-                            <h3>Panitia TECHNO PBP Perkap Division</h3>
-                            <p>Coordinated room borrowing, arranged necessary equipment, and managed the borrowing for
-                                Zoom meetings. During the PBP held in July and August, I acted as an emcee a couple of
-                                times while managing documentation during the PBP event.</p>
+                            <h3 class="about__timeline-title">Committee TECHNO PBP Perkap Division</h3>
+                            <p class="about__timeline-description">Coordinated lab room and Zoom borrowing, as well as
+                                arranged necessary equipment. During the PBP event held in July and August, I acted as
+                                an emcee a couple of times while managing documentation during multiple batches.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="works">
-        <p class="section__text__p2">Explore My Latest</p>
-        <h1 class="title">Works</h1>
-        <div class="card-container swiper">
-            <div class="card-wrapper">
-                <div class="card-list swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="card-image">
-                            <img src="./assets/project-4.png" alt="Placeholder Image">
+    <section class="works" id="works">
+        <p class="section__text-p2">Explore My Latest</p>
+        <h1 class="section__text-title">Works</h1>
+        <div class="works__carousel swiper">
+            <div class="works__carousel-wrapper">
+                <div class="works__list swiper-wrapper">
+                    <div class="works__item swiper-slide">
+                        <div class="works__item-image">
+                            <img src="./assets/project-4.png" alt="Rumah Tangga Project">
                         </div>
-                        <div class="card-content">
-                            <div class="card-description">
+                        <div class="works__item-content">
+                            <div class="works__item-tags swiper-no-swiping">
                                 <span>MongoDB</span>
                                 <span>Express</span>
                                 <span>React</span>
                                 <span>Node.js</span>
                             </div>
-                            <h2>RumahTangga</h2>
+                            <h2 class="works__item-title">Rumah Tangga</h2>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="card-image">
-                            <img src="./assets/project-3.png" alt="Placeholder Image">
+                    <div class="works__item swiper-slide">
+                        <div class="works__item-image">
+                            <img src="./assets/project-3.png" alt="RAiso Project">
                         </div>
-                        <div class="card-content">
-                            <div class="card-description">
+                        <div class="works__item-content">
+                            <div class="works__item-tags swiper-no-swiping">
                                 <span>ASP.NET</span>
                                 <span>SQL</span>
                                 <span>C#</span>
                                 <span>HTML</span>
                                 <span>CSS</span>
                             </div>
-                            <h2>RAiso</h2>
+                            <h2 class="works__item-title">RAiso</h2>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="card-image">
-                            <img src="./assets/project-2.png" alt="Placeholder Image">
+                    <div class="works__item swiper-slide">
+                        <div class="works__item-image">
+                            <img src="./assets/project-2.png" alt="LIFT LIFE Project">
                         </div>
-                        <div class="card-content">
-                            <div class="card-description">
+                        <div class="works__item-content">
+                            <div class="works__item-tags swiper-no-swiping">
                                 <span>Figma</span>
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                             </div>
-                            <h2>LIFT LIFE</h2>
+                            <h2 class="works__item-title">LIFT LIFE</h2>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="card-image">
-                            <img src="./assets/project-1.png" alt="Placeholder Image">
+                    <div class="works__item swiper-slide">
+                        <div class="works__item-image">
+                            <img src="./assets/project-1.png" alt="JCC Project">
                         </div>
-                        <div class="card-content">
-                            <div class="card-description">
+                        <div class="works__item-content">
+                            <div class="works__item-tags swiper-no-swiping">
                                 <span>Figma</span>
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>JavaScript</span>
                             </div>
-                            <h2>JCC</h2>
+                            <h2 class="works__item-title">JCC</h2>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="works__pagination swiper-pagination"></div>
+                <div class="works__button-prev swiper-button-prev"></div>
+                <div class="works__button-next swiper-button-next"></div>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <p class="section__text__p2">Feel Free To</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container" onclick="location.href='mailto:hansdominict@gmail.com'">
+    <section class="contact" id="contact">
+        <p class="section__text-p2">Feel Free To</p>
+        <h1 class="section__text-title">Contact Me</h1>
+        <div class="contact__info-container">
+            <div class="contact__info-item" onclick="location.href='mailto:hansdominict@gmail.com'">
                 <box-icon name='envelope' type='solid'></box-icon>
-                <p><a href="mailto:hansdominict@gmail.com">Email</a></p>
+                <p class="contact__info-text">
+                    <a href="mailto:hansdominict@gmail.com" class="contact__info-link">Email</a>
+                </p>
             </div>
-            <div class="contact-info-container"
-                onclick="location.href='https://linkedin.com/in/hans-dominic-a81126276/'">
+            <div class="contact__info-item" onclick="location.href='https://linkedin.com/in/hans-dominic-a81126276/'">
                 <box-icon name='linkedin' type='logo'></box-icon>
-                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                <p class="contact__info-text">
+                    <a href="https://linkedin.com/in/hans-dominic-a81126276/" class="contact__info-link">LinkedIn</a>
+                </p>
             </div>
         </div>
     </section>
-    <footer>
-        <div class="wrapper">
-            <p>Powered By</p>
-            <div class="words">
-                <span class="spin">HTML</span>
-                <span class="spin">CSS</span>
-                <span class="spin">JS</span>
-                <span class="spin">HTML</span>
+    <footer class="footer">
+        <div class="footer__powered-by">
+            <p class="footer__powered-by-text">Powered By</p>
+            <div class="footer__powered-by-words">
+                <span class="footer__powered-by-word">HTML</span>
+                <span class="footer__powered-by-word">CSS</span>
+                <span class="footer__powered-by-word">JS</span>
+                <span class="footer__powered-by-word">HTML</span>
             </div>
         </div>
     </footer>
