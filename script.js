@@ -33,6 +33,28 @@ document.getElementById('color-container').addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 40,
+        noSwiping: true, 
+        noSwipingClass: 'swiper-no-swiping',
+
+        // Pagination bullets
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     new Swiper('.works__carousel-wrapper', {
         loop: true,
         spaceBetween: 40,
@@ -66,3 +88,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "flex";
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 30);
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = "none";
+    }, 300);
+}
+
+window.onclick = function (event) {
+    const openModals = document.querySelectorAll('.modal');
+    openModals.forEach((modal) => {
+        if (event.target === modal) {
+            closeModal(modal.id);
+        }
+    });
+};

@@ -51,6 +51,18 @@
         flex: 1 1 100%;
         max-width: 100%;
     }
+
+    .modal__body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal__text,
+    .modal__image-container {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -92,6 +104,11 @@
     .swiper-button-next {
         display: none !important;
         ;
+    }
+
+    .tech-container {
+        flex-direction: column;
+        gap: 0;
     }
 
     .contact__info-container {

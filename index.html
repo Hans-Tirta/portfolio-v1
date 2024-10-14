@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
@@ -140,7 +141,7 @@
         <div class="works__carousel swiper">
             <div class="works__carousel-wrapper">
                 <div class="works__list swiper-wrapper">
-                    <div class="works__item swiper-slide">
+                    <div class="works__item swiper-slide" onclick="openModal('modal-rumahTangga')">
                         <div class="works__item-image">
                             <img src="./assets/project-4.png" alt="Rumah Tangga Project">
                         </div>
@@ -154,7 +155,7 @@
                             <h2 class="works__item-title">Rumah Tangga</h2>
                         </div>
                     </div>
-                    <div class="works__item swiper-slide">
+                    <div class="works__item swiper-slide" onclick="openModal('modal-RAiso')">
                         <div class="works__item-image">
                             <img src="./assets/project-3.png" alt="RAiso Project">
                         </div>
@@ -169,7 +170,7 @@
                             <h2 class="works__item-title">RAiso</h2>
                         </div>
                     </div>
-                    <div class="works__item swiper-slide">
+                    <div class="works__item swiper-slide" onclick="openModal('modal-liftLife')">
                         <div class="works__item-image">
                             <img src="./assets/project-2.png" alt="LIFT LIFE Project">
                         </div>
@@ -183,7 +184,7 @@
                             <h2 class="works__item-title">LIFT LIFE</h2>
                         </div>
                     </div>
-                    <div class="works__item swiper-slide">
+                    <div class="works__item swiper-slide" onclick="openModal('modal-jcc')">
                         <div class="works__item-image">
                             <img src="./assets/project-1.png" alt="JCC Project">
                         </div>
@@ -201,6 +202,371 @@
                 <div class="works__pagination swiper-pagination"></div>
                 <div class="works__button-prev swiper-button-prev"></div>
                 <div class="works__button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div id="modal-rumahTangga" class="modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('modal-rumahTangga')">&times;</span>
+                <div class="modal__body">
+                    <div class="modal__text">
+                        <h1>Rumah Tangga</h1>
+                        <p>A home service web application inspired by Fiverr, built using the <b>MERN stack (MongoDB,
+                                Express.js, React.js, and Node.js)</b>, one of the most popular and efficient technology
+                            stacks for developing modern full-stack web applications. I contributed to this group
+                            project by following YouTube courses, using <b>JavaScript</b> as the primary programming
+                            language, complemented by <b>SCSS</b> for enhanced styling and maintainability.</p>
+                        <div class="tech-container">
+                            <div class="tech-section">
+                                <h2>Technologies Used</h2>
+                                <ul>
+                                    <li>
+                                        <i class="devicon-mongodb-plain colored"></i> MongoDB
+                                    </li>
+                                    <li>
+                                        <i class="devicon-express-original colored"></i> Express
+                                    </li>
+                                    <li>
+                                        <i class="devicon-react-original colored"></i> React
+                                    </li>
+                                    <li>
+                                        <i class="devicon-nodejs-plain colored"></i> Node.js
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-section">
+                                <h2>Development Tools</h2>
+                                <ul>
+                                    <li>
+                                        <i class="devicon-vscode-plain colored"></i> Visual Studio Code
+                                    </li>
+                                    <li>
+                                        <i class="devicon-git-plain colored"></i> Git
+                                    </li>
+                                    <li>
+                                        <i class="devicon-postman-plain colored"></i> Postman
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>Features</h2>
+                        <ul>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> User Authentication
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Create and Fetch Orders
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Review Rating
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__image-container">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/RumahTangga_1.jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RumahTangga_2.jpeg" alt="Rumah Tangga More Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RumahTangga_3.jpeg" alt="Rumah Tangga More Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RumahTangga_4.jpeg" alt="Rumah Tangga More Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RumahTangga_5.jpeg" alt="Rumah Tangga More Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RumahTangga_6.jpeg" alt="Rumah Tangga More Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RumahTangga_7.jpeg" alt="Rumah Tangga More Details">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-RAiso" class="modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('modal-RAiso')">&times;</span>
+                <div class="modal__body">
+                    <div class="modal__text">
+                        <h1>RAiso</h1>
+                        <p>RAiso - A simple online
+                            store specializing in stationery products. This project was individually developed using
+                            ASP.NET and followed the <b>Domain-Driven Design (DDD)</b> methodology to ensure a
+                            well-structured, scalable, and maintainable website architecture. The platform is
+                            structured into three distinct roles: <b>Guest, Admin, and User</b>, each with specific
+                            functionalities.</p>
+                        <div class="tech-container">
+                            <div class="tech-section">
+                                <h2>Technologies Used</h2>
+                                <ul>
+                                    <li>
+                                        <i class="devicon-dotnetcore-plain colored"></i> ASP.NET
+                                    </li>
+                                    <li>
+                                        <i class="devicon-azuresqldatabase-plain colored"></i> SQL
+                                    </li>
+                                    <li>
+                                        <i class="devicon-csharp-plain colored"></i> C#
+                                    </li>
+                                    <li>
+                                        <i class="devicon-html5-plain colored"></i> HTML
+                                    </li>
+                                    <li>
+                                        <i class="devicon-css3-plain colored"></i> CSS
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-section">
+                                <h2>Development Tools</h2>
+                                <ul>
+                                    <li>
+                                        <i class="devicon-visualstudio-plain colored"></i> Visual Studio 2022
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>Features</h2>
+                        <ul>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Login, Register, Logout
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Insert, Update Stationery
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Add, Update Cart
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> View Transaction History, Detail, Report
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Update user Profile
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__image-container">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso.jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (2).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (3).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (4).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (5).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (6).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (7).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (8).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (9).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (10).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (11).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/RAiso (12).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-liftLife" class="modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('modal-liftLife')">&times;</span>
+                <div class="modal__body">
+                    <div class="modal__text">
+                        <h1>Lift Life</h1>
+                        <p>Lift Life - A fitness website designed to provide users with a wide range of exercise plans,
+                            programs, and a <b>personal chatbot</b> to help them achieve their fitness goals. I
+                            contributed to
+                            this group project by working together on the design in <b>Figma</b> and developing the
+                            website's
+                            structure using <b>HTML and CSS</b>, along with <b>JavaScript</b> for basic features like a
+                            stopwatch and
+                            set counter.</p>
+                        <div class="tech-container">
+                            <div class="tech-section">
+                                <h2>Technologies Used</h2>
+                                <ul>
+                                    <li>
+                                        <i class="devicon-html5-plain colored"></i> HTML
+                                    </li>
+                                    <li>
+                                        <i class="devicon-css3-plain colored"></i> CSS
+                                    </li>
+                                    <li>
+                                        <i class="devicon-javascript-plain colored"></i> JavaScript
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-section">
+                                <h2>Development Tools</h2>
+                                <ul>
+                                    <li>
+                                        <i class="devicon-figma-plain colored"></i> Figma
+                                    </li>
+                                    <li>
+                                        <i class="devicon-vscode-plain colored"></i> Visual Studio Code
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>Features</h2>
+                        <ul>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> UI/UX Design in Figma
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Workout, Program List
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Simple Set Counter and Stopwatch
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Chatbot Trainer
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> E-commerce Shop
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__image-container">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/LiftLife (8).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/LiftLife (7).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/LiftLife (6).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/LiftLife (5).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/LiftLife (4).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/LiftLife (3).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/LiftLife (2).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/LiftLife (1).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-jcc" class="modal">
+            <div class="modal__content">
+                <span class="modal__close" onclick="closeModal('modal-jcc')">&times;</span>
+                <div class="modal__body">
+                    <div class="modal__text">
+                        <h1>JCC</h1>
+                        <p>JOCKEY'S CONFERENCE CENTER (JCC) - A simple and user-friendly website designed to provide
+                            information about events, pricing, and general details about JCC as a conference center. The
+                            site was built as a individual lab project using <b>HTML and CSS</b> for structure and
+                            styling, with <b>JavaScript</b> implemented to handle form validation, ensuring a smooth and
+                            secure user experience.</p>
+                        <div class="tech-container">
+                            <div class="tech-section">
+                                <h2>Technologies Used</h2>
+                                <ul>
+                                    <li>
+                                        <i class="devicon-html5-plain colored"></i> HTML
+                                    </li>
+                                    <li>
+                                        <i class="devicon-css3-plain colored"></i> CSS
+                                    </li>
+                                    <li>
+                                        <i class="devicon-javascript-plain colored"></i> JavaScript
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-section">
+                                <h2>Development Tools</h2>
+                                <ul>
+                                    <li>
+                                        <i class="devicon-figma-plain colored"></i> Figma
+                                    </li>
+                                    <li>
+                                        <i class="devicon-vscode-plain colored"></i> Visual Studio Code
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>Features</h2>
+                        <ul>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> UI/UX Design in Figma
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Event, Price, About Us Page
+                            </li>
+                            <li>
+                                <box-icon name='check-circle'></box-icon> Contact Us and Form Validation
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__image-container">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/JCC (5).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/JCC (4).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/JCC (3).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/JCC (2).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/JCC (1).jpeg" alt="Rumah Tangga Details">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
