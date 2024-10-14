@@ -417,6 +417,29 @@ box-icon[name="calendar"] {
     width: 28px;
 }
 
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    transition: transform 0.3s;
+}
+
+.arrowBot {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.arrowTop {
+    position: absolute;
+    right: -5rem;
+    top: 2.5rem;
+}
+
+.arrowBot:hover,
+.arrowTop:hover {
+    transform: scale(1.5);
+}
+
 /* Work Section */
 #works {
     position: relative;
@@ -433,7 +456,7 @@ box-icon[name="calendar"] {
 
 .works__carousel-wrapper {
     margin: 0 3rem 3rem;
-    padding: 0 1rem 1rem;
+    padding: 1rem;
     overflow: hidden;
 }
 
@@ -446,10 +469,12 @@ box-icon[name="calendar"] {
     transition: transform 0.3s;
     display: block;
     width: 100%;
+    z-index: 100;
 }
 
 .works__item:hover {
     cursor: pointer;
+    transform: scale(1.025) !important;
 }
 
 .works__item-image img {
@@ -550,12 +575,13 @@ box-icon[name="calendar"] {
 .modal__close {
     position: absolute;
     top: 1rem;
-    right: 0.75rem;
+    right: 1.75rem;
     font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
     color: grey;
     transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 1000;
 }
 
 .modal__close:hover {
@@ -643,7 +669,7 @@ box-icon[name="check-circle"]:hover {
 
 .modal__content img {
     max-width: 100%;
-    max-height: 80vh;
+    max-height: 60vh;
     width: auto;
     height: auto;
     object-fit: contain;

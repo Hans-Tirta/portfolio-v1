@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
         spaceBetween: 40,
         noSwiping: true, 
         noSwipingClass: 'swiper-no-swiping',
+        // centeredSlides: true,
+        autoHeight: true,
 
         // Pagination bullets
         pagination: {

@@ -47,6 +47,11 @@
         justify-content: left;
     }
 
+    .arrowTop,
+    .arrowBot {
+        display: none;
+    }
+
     .works__item {
         flex: 1 1 100%;
         max-width: 100%;
@@ -96,7 +101,6 @@
 
     .works__carousel-wrapper {
         margin: 0 0rem 3rem;
-        padding: 0 0rem 1rem;
         overflow: hidden;
     }
 
