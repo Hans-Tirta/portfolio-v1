@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -135,6 +136,7 @@ nav {
     list-style: none;
     font-size: 1.5rem;
     z-index: 10;
+    cursor: pointer;
 }
 
 a {
@@ -196,6 +198,7 @@ a:hover {
     transition: right 0.3s ease;
     list-style: none;
     z-index: 1;
+    cursor: pointer;
 }
 
 .navbar__menu-links li {
@@ -269,6 +272,89 @@ box-icon[name="map-pin"] {
     font-size: 1.25rem;
 }
 
+.scroller {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    margin-inline: auto;
+    height: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -4rem;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+        right: -4rem;
+    }
+}
+
+.itemLeft,
+.itemRight {
+    width: 6rem;
+    height: 100%;
+    background-color: grey;
+    border-radius: 0.5rem;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.itemLeft {
+    left: max(calc(90px * 8), 100%);
+    animation-name: scrollLeft;
+}
+
+.itemRight {
+    right: max(calc(90px * 8), calc(100% + 90px));
+    animation-name: scrollRight;
+}
+
+.item1 {
+    animation-delay: calc(25s / 7 * (7 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(25s / 7 * (7 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(25s / 7 * (7 - 3) * -1);
+}
+
+.item4 {
+    animation-delay: calc(25s / 7 * (7 - 4) * -1);
+}
+
+.item5 {
+    animation-delay: calc(25s / 7 * (7 - 5) * -1);
+}
+
+.item6 {
+    animation-delay: calc(25s / 7 * (7 - 6) * -1);
+}
+
+.item7 {
+    animation-delay: calc(25s / 7 * (7 - 7) * -1);
+}
+
 /* Typewriter & Appear Animation */
 .section__text-title {
     text-align: center;
@@ -318,6 +404,7 @@ box-icon[name="map-pin"] {
     display: flex;
     justify-content: left;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     gap: 1rem;
 }
 
@@ -442,17 +529,20 @@ box-icon[name="calendar"] {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+    cursor: pointer;
 }
 
 .arrowTop {
     position: absolute;
     right: -5rem;
     top: 2.5rem;
+    cursor: pointer;
 }
 
 .arrowBot:hover,
 .arrowTop:hover {
     transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Work Section */
