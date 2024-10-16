@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -136,7 +135,6 @@ nav {
     list-style: none;
     font-size: 1.5rem;
     z-index: 10;
-    cursor: pointer;
 }
 
 a {
@@ -198,7 +196,6 @@ a:hover {
     transition: right 0.3s ease;
     list-style: none;
     z-index: 1;
-    cursor: pointer;
 }
 
 .navbar__menu-links li {
@@ -523,26 +520,6 @@ box-icon[name="calendar"] {
     cursor: pointer;
     height: 2rem;
     transition: transform 0.3s;
-}
-
-.arrowBot {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-    cursor: pointer;
-}
-
-.arrowTop {
-    position: absolute;
-    right: -5rem;
-    top: 2.5rem;
-    cursor: pointer;
-}
-
-.arrowBot:hover,
-.arrowTop:hover {
-    transform: scale(1.5);
-    transition: transform 0.3s ease-in-out;
 }
 
 /* Work Section */

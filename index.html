@@ -29,9 +29,9 @@
                 <div class="navbar__dot">.</div>
             </div>
             <ul class="navbar__links">
-                <li><a onclick="scrollToSection('about')">About</a></li>
-                <li><a onclick="scrollToSection('works')">Work</a></li>
-                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <nav id="nav-hamburger">
@@ -40,15 +40,15 @@
                 <div class="navbar__dot">.</div>
             </div>
             <div class="navbar__menu-hamburger">
-                <div class="navbar__icon-hamburger" onclick="toggleMenu(); ">
+                <div class="navbar__icon-hamburger" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <ul class="navbar__menu-links">
-                    <li><a onclick="toggleMenu();scrollToSection('about')">About</a></li>
-                    <li><a onclick="toggleMenu();scrollToSection('works')">Work</a></li>
-                    <li><a onclick="toggleMenu();scrollToSection('contact')">Contact</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#works" onclick="toggleMenu()">Work</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,7 +63,7 @@
                 <div class="location">
                     <box-icon type="solid" name="map-pin"></box-icon>
                     <p class="section__text-p3">Jakarta, Indonesia</p>
-                </div>
+                  </div>
                 <div class="hero__socials">
                     <img src="./assets/linkedin.png" alt="LinkedIn" class="hero__icon"
                         onclick="location.href='https://linkedin.com/in/hans-dominic/'">
@@ -79,17 +79,10 @@
                     <div class="itemLeft item6">SQL</div>
                     <div class="itemLeft item7">C#</div>
                 </div>
-                <!-- <div class="scroller">
-                    <div class="itemRight item1">ASP.NET</div>
-                    <div class="itemRight item2">SQL</div>
-                    <div class="itemRight item3">C#</div>
-                    <div class="itemRight item4">Java</div>
-                </div> -->
             </div>
         </section>
     </div>
     <section class="about" id="about">
-        <box-icon name='up-arrow' type='solid' class="icon arrowTop" onclick="scrollToSection('nav-bar')"></box-icon>
         <p class="section__text-p2">Learn More</p>
         <h1 class="section__text-title">About Me</h1>
         <div class="about__timeline">
@@ -154,10 +147,8 @@
                 </div>
             </div>
         </div>
-        <box-icon name='down-arrow' type='solid' class="icon arrowBot" onclick="scrollToSection('works')"></box-icon>
     </section>
     <section class="works" id="works">
-        <box-icon name='up-arrow' type='solid' class="icon arrowTop" onclick="scrollToSection('about')"></box-icon>
         <p class="section__text-p2">Explore My Latest</p>
         <h1 class="section__text-title">Works</h1>
         <div class="works__carousel swiper">
@@ -599,7 +590,6 @@
                 </div>
             </div>
         </div>
-        <box-icon name='down-arrow' type='solid' class="icon arrowBot" onclick="scrollToSection('contact')"></box-icon>
     </section>
     <section class="contact" id="contact">
         <p class="section__text-p2">Feel Free To</p>

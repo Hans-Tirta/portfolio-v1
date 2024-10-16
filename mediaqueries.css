@@ -48,11 +48,6 @@
         justify-content: left;
     }
 
-    .arrowTop,
-    .arrowBot {
-        display: none;
-    }
-
     .works__item {
         flex: 1 1 100%;
         max-width: 100%;
