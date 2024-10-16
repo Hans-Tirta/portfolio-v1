@@ -251,7 +251,22 @@ section {
 
 .section__text-p1 {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+box-icon[name="map-pin"] {
+    height: 28px;
+    width: 28px;
+}
+
+.section__text-p3 {
+    font-size: 1.25rem;
 }
 
 /* Typewriter & Appear Animation */

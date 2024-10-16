@@ -31,6 +31,7 @@
         text-align: center;
     }
 
+    .location,
     .hero__socials {
         justify-content: center;
     }
@@ -91,8 +92,21 @@
         font-size: 2rem;
     }
 
-    .section__text-p2 {
+    .section__text-p1 {
         font-size: 1.25rem;
+    }
+
+    .section__text-p2 {
+        font-size: 1.5rem;
+    }
+
+    .section__text-p3 {
+        font-size: 1rem;
+    }
+
+    box-icon[name="map-pin"] {
+        height: 14px;
+        width: 14px;
     }
 
     .about__timeline-heading {
