@@ -14,15 +14,6 @@
 
 <body>
     <div class="container" id="color-container">
-        <div class="container__area">
-            <ul class="container__rectangles">
-                <li class="container__rectangle"></li>
-                <li class="container__rectangle"></li>
-                <li class="container__rectangle"></li>
-                <li class="container__rectangle"></li>
-                <li class="container__rectangle"></li>
-            </ul>
-        </div>
         <nav id="nav-bar">
             <div class="navbar__logo-container">
                 <a href="" class="navbar__logo">Hans</a>
@@ -30,6 +21,7 @@
             </div>
             <ul class="navbar__links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skill</a></li>
                 <li><a href="#works">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -47,6 +39,7 @@
                 </div>
                 <ul class="navbar__menu-links">
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skill</a></li>
                     <li><a href="#works" onclick="toggleMenu()">Work</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
@@ -63,7 +56,7 @@
                 <div class="location">
                     <box-icon type="solid" name="map-pin"></box-icon>
                     <p class="section__text-p3">Jakarta, Indonesia</p>
-                  </div>
+                </div>
                 <div class="hero__socials">
                     <img src="./assets/linkedin.png" alt="LinkedIn" class="hero__icon"
                         onclick="location.href='https://linkedin.com/in/hans-dominic/'">
@@ -71,13 +64,13 @@
                         onclick="location.href='https://github.com/Hans-Tirta'">
                 </div>
                 <div class="scroller">
-                    <div class="itemLeft item1">HTML</div>
-                    <div class="itemLeft item2">CSS</div>
-                    <div class="itemLeft item3">JS</div>
-                    <div class="itemLeft item4">Figma</div>
-                    <div class="itemLeft item5">ASP.NET</div>
-                    <div class="itemLeft item6">SQL</div>
-                    <div class="itemLeft item7">C#</div>
+                    <div class="itemLeft item1"><span>HTML</span></div>
+                    <div class="itemLeft item2"><span>CSS</span></div>
+                    <div class="itemLeft item3"><span>JS</span></div>
+                    <div class="itemLeft item4"><span>Figma</span></div>
+                    <div class="itemLeft item5"><span>ASP.NET</span></div>
+                    <div class="itemLeft item6"><span>SQL</span></div>
+                    <div class="itemLeft item7"><span>C#</span></div>
                 </div>
             </div>
         </section>
@@ -110,8 +103,8 @@
                                 2022-Present
                             </div>
                             <h3 class="about__timeline-title">Bina Nusantara University</h3>
-                            <p class="about__timeline-description">Continuing my education at Binus University Alam
-                                Sutra, where I am currently pursuing a degree in Computer Science.</p>
+                            <p class="about__timeline-description">Continuing my education where I am currently pursuing
+                                a degree in Computer Science.</p>
                         </div>
                     </div>
                 </div>
@@ -128,8 +121,8 @@
                                 2023-2024
                             </div>
                             <h3 class="about__timeline-title">Activist HIMTI CARE Division</h3>
-                            <p class="about__timeline-description">As an activist in the HIMTI CARE Division, I was
-                                involved in organizing various internal events for fellow activists and social service
+                            <p class="about__timeline-description">Involved in organizing various internal events for
+                                fellow activists and social service
                                 initiatives.</p>
                         </div>
                         <div class="about__timeline-content">
@@ -139,15 +132,120 @@
                                 2023
                             </div>
                             <h3 class="about__timeline-title">Committee TECHNO PBP Perkap Division</h3>
-                            <p class="about__timeline-description">Coordinated lab room and Zoom borrowing, as well as
-                                arranged necessary equipment. During the PBP event held in July and August, I acted as
-                                an emcee a couple of times while managing documentation during multiple batches.</p>
+                            <p class="about__timeline-description">Arranged lab room and necessary equipment. During the
+                                event, I managed documentation in multiple batches.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="skills" id="skills">
+        <p class="section__text-p2">List of</p>
+        <h1 class="section__text-title">My Skills</h1>
+
+        <div class="skills__list">
+            <div class="skills__item">
+                <div class="skills__item-header">
+                    <box-icon name='code-alt'></box-icon>
+                    <h2 class="skills__item-title">Tools</h2>
+                </div>
+                <ul class="skills__item-content">
+                    <li class="skills__item-content-item">
+                        <i class="devicon-vscode-plain"></i> Visual Studio Code
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-visualstudio-plain"></i> Visual Studio 2022
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-github-plain"></i> GitHub
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-figma-plain"></i> Figma
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-eclipse-plain"></i> Eclipse
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__item-header">
+                    <box-icon name='code-alt'></box-icon>
+                    <h2 class="skills__item-title">Languages</h2>
+                </div>
+                <ul class="skills__item-content">
+                    <li class="skills__item-content-item">
+                        <i class="devicon-html5-plain"></i> HTML
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-css3-plain"></i> CSS
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-javascript-plain"></i> JavaScript
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-java-plain"></i> Java
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-c-plain"></i> C
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-csharp-plain"></i> C#
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-python-plain"></i> Python
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__item-header">
+                    <box-icon name='code-alt'></box-icon>
+                    <h2 class="skills__item-title">Frameworks</h2>
+                </div>
+                <ul class="skills__item-content">
+                    <li class="skills__item-content-item">
+                        <i class="devicon-dotnetcore-plain"></i> ASP.NET
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-react-original"></i> React
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__item-header">
+                    <box-icon name='code-alt'></box-icon>
+                    <h2 class="skills__item-title">Backend</h2>
+                </div>
+                <ul class="skills__item-content">
+                    <li class="skills__item-content-item">
+                        <i class="devicon-nodejs-plain"></i> Node.js
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-dotnetcore-plain"></i> .NET
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__item-header">
+                    <box-icon name='code-alt'></box-icon>
+                    <h2 class="skills__item-title">Databases</h2>
+                </div>
+                <ul class="skills__item-content">
+                    <li class="skills__item-content-item">
+                        <i class="devicon-mysql-plain"></i> SQL
+                    </li>
+                    <li class="skills__item-content-item">
+                        <i class="devicon-mongodb-plain"></i> MongoDB
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section class="works" id="works">
         <p class="section__text-p2">Explore My Latest</p>
         <h1 class="section__text-title">Works</h1>
@@ -212,9 +310,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="works__pagination swiper-pagination"></div>
-                <div class="works__button-prev swiper-button-prev"></div>
-                <div class="works__button-next swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
         <div id="modal-rumahTangga" class="modal">
